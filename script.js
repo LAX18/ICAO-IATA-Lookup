@@ -3,6 +3,8 @@ var world_airports
 function lookup() {
     clear()
     var item = document.getElementById("input").value
+    var item = item.toUpperCase()
+    console.log(item)
     console.log(item.length)
     if (item.length === 3) {
         for (airport in world_airports) {
